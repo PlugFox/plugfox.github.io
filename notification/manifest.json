@@ -1,11 +1,11 @@
 {
-    "name": "ozon_flutter_playground",
-    "short_name": "ozon_flutter_playground",
+    "name": "app_notification_example",
+    "short_name": "app_notification_example",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "App notification example",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -33,19 +33,19 @@ const RESOURCES = {
 "assets/asset/image/mentor_0.webp": "b910b437fcb70946f9505881ca65a98f",
 "assets/asset/image/mentor_1.webp": "d26e8b209145d71beb2a6836020e55d5",
 "assets/asset/image/mentor_2.webp": "1be244a96dd95c1e25b453ed03b1aa50",
-"assets/AssetManifest.json": "21dc45aed1a7ea639231dbeaa6ef1fcf",
+"assets/AssetManifest.json": "fa99436c6f0f64e28dad04386b1cf741",
 "assets/FontManifest.json": "69c67339b252549dc8dc3f0b72a81559",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "25a66ff5e49ae44facb990da2b09b618",
+"assets/NOTICES": "e615939359e6b759b73e32c6702251db",
 "assets/packages/flutter_inappwebview/t_rex_runner/t-rex.css": "5a8d0222407e388155d7d1395a75d5b9",
 "assets/packages/flutter_inappwebview/t_rex_runner/t-rex.html": "16911fcc170c8af1c5457940bd0bf055",
 "assets/packages/youtube_player_flutter/assets/speedometer.webp": "50448630e948b5b3998ae5a5d112622b",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "7545fc7e89b78a2b5372d7a5829ac63a",
-"/": "7545fc7e89b78a2b5372d7a5829ac63a",
-"main.dart.js": "c3236f2b6732b2c2d1030c437209307e",
+"index.html": "7af868abe2d943d6f13d33654dd3e352",
+"/": "7af868abe2d943d6f13d33654dd3e352",
+"main.dart.js": "056c8ff996bdc3fed7299209de1ed22f",
 "manifest.json": "16a6e720436ab70c5f32a186a7fcd342",
 "version.json": "d2c10a0d953cccc16c26d110f1f82c0f"
 };
@@ -191,7 +191,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
